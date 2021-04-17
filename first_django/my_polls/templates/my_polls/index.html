@@ -3,7 +3,8 @@
 
 <link rel="stylesheet" type="text/css" href="{% static 'my_polls/style.css' %}">
 <html lang="en">
-
+<h1 class = "h1_detail_question_title">My question</h1>
+<div class ="div_index">
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
@@ -13,3 +14,4 @@
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
+    </div>

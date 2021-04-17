@@ -109,7 +109,7 @@ celerybeat.pid
 venv/
 
 # Environments
-first_django/.env
+first_django/dev.env
 .venv
 env/
 ../venv/
@@ -118,6 +118,8 @@ env.bak/
 venv.bak/
 psql.env
 pg4.env
+prod.env
+dev.env
 
 # Spyder project settings
 .spyderproject

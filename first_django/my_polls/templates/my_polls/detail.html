@@ -9,7 +9,7 @@
 </head>
 <body>
 <h1 class = "h1_detail_question_title">{{ question.question_text }}</h1>
-
+<div class = "div_index">
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
 <form action="{% url 'my_polls:vote' question.id %}" method="post">
@@ -21,5 +21,7 @@
     <p></p>
 <input class = "gradient-button" type="submit" value="Vote">
 </form>
+    <a href="{% url 'my_polls:index' %}"><h3>All questions</h3></a>
+    </div>
 </body>
 </html>

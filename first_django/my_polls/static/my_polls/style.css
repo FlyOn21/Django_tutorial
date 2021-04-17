@@ -1,25 +1,37 @@
-li a {
-    color: #FFFAFA;
+.div_index {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 13%;
 }
+
+li a {
+    color: #000000;
+}
+
 body {
     background: white url("images/background.jpg") no-repeat;
 }
+
 li {
     color: #4169E1;
 }
+
 .form_label_vote
 {
-    color: #FFFAFA;
+    color: #000000;
     }
 
 .h1_detail_question_title {
-      color: #00008B}
+      color: #00008B;
+      text-align: center;
+ }
 
 .gradient-button {
   text-decoration: none;
   display: inline-block;
   color: white;
-  padding: 20px 30px;
+  padding: 10px 15px;
   margin: 10px 20px;
   border-radius: 10px;
   text-transform: uppercase;
