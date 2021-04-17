@@ -1,5 +1,0 @@
-include LICENSE
-include README.rst
-recursive-include my_polls/static *
-recursive-include my_polls/templates *
-recursive-include docs *
