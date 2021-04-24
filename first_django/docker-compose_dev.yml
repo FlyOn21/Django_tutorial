@@ -1,0 +1,32 @@
+version: "3.7"
+services:
+  dbpsql:
+    image: postgres:latest
+    container_name: postgres13
+    env_file:
+      - psql.env
+    restart: always
+    hostname: dbpsql
+    networks:
+      - django_network
+    ports:
+      - "9500:5432"
+    volumes:
+      - /home/pasha/PycharmProjects/pythonProject/Django_tutorial/dbdata:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pg4
+    restart: unless-stopped
+    env_file:
+      - pg4.env
+    ports:
+      - "5550:80"
+    depends_on:
+      - dbpsql
+    networks:
+      - django_network
+networks:
+  django_network:
+volumes:
+  postgres_data:
